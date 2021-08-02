@@ -1,13 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poiret One', -apple-system;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+font-family: 'Poiret One', -apple-system;
+}
+
+.no-bullet-item {
+  list-style-type: none;
+}
+
+.whole {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  background-color: lightblue;
+}
+
+.left {
+  height: 505px;
+  width: 200px;
+  margin: 15px;
+  background-color: cornflowerblue;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-right > div {
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+  padding: 25px;
+  background-color: cornflowerblue;
+}
+
+.bottom-right {
+  height: 245px;
+  margin: 15px;
+  padding: 15px;
+  background-color: cornflowerblue;
 }

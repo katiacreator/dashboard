@@ -1,22 +1,17 @@
-function Sidebar (props){
-    console.log("props:", props)
+import React from 'react';
 
-    const headings = props.sidebar.headings.map((heading, index )=> {
-        return <li key={index}>{heading}</li>
-    })
-    console.log('comments: ', comments);
+function Sidebar(props){
+  let sidebarItem = props.sidebarItems.map(item => 
+    <li>{item}</li>
+  )
 
-    return (
-    <>
-    <h1>{props.sidebar.title}</h1> 
-    <h4>By: {props.sidebar.author}</h4>
-    <p>{props.sidebar.body}</p>
-    <ul>
-        {comments}
-    </ul>
-    <hr/>
-    </>
-    )
+  return(
+    <div>
+      <ul class="no-bullet-item">
+        {sidebarItem}
+      </ul>
+    </div>
+  )
 }
 
 export default Sidebar
